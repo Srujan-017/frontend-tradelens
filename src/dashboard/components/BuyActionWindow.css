@@ -1,0 +1,221 @@
+/* Buy Action Window Container */
+.dashboard-wrapper .order-window {
+  --radius: 4px;
+  width: 40%;
+  height: 63%;
+  background: rgb(245, 245, 245);
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  cursor: move;
+  box-sizing: border-box;
+  z-index: 100;
+  border-radius: var(--radius);
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.dashboard-wrapper .dragging {
+  opacity: 0;
+}
+
+.dashboard-wrapper .order-window .header {
+  width: 100%;
+  background: #4184f3;
+  box-sizing: border-box;
+  padding: 16px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.dashboard-wrapper .header h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.dashboard-wrapper .header h3 span {
+  font-size: 0.6rem;
+}
+
+.dashboard-wrapper .market-options {
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.dashboard-wrapper .market-options label,
+.dashboard-wrapper .order-validity label input,
+.dashboard-wrapper .sub-order-type label,
+.dashboard-wrapper .sub-order-type label input,
+.dashboard-wrapper .stop-loss-type label,
+.dashboard-wrapper .stop-loss-type label input {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.dashboard-wrapper .market-options input[type="radio"] {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 2px;
+  margin-right: 6px;
+}
+
+.dashboard-wrapper .tab {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid rgba(180, 180, 180, 0.6);
+}
+
+.dashboard-wrapper .tab button {
+  border: none;
+  padding: 14px 16px;
+  background: transparent;
+  color: #4184f3;
+  font-weight: 400;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.dashboard-wrapper .regular-order {
+  padding: 16px 26px;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.dashboard-wrapper .regular-order label {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.dashboard-wrapper .order-validity {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-wrapper .order-validity label span {
+  color: rgb(190, 190, 190);
+}
+
+.dashboard-wrapper .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.dashboard-wrapper .inputs fieldset {
+  max-width: 120px;
+  box-sizing: border-box;
+  border: 0.7px solid #ddd;
+  margin-right: 8px;
+}
+
+.dashboard-wrapper .inputs fieldset legend {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  padding: 0 4px;
+}
+
+.dashboard-wrapper .inputs fieldset:last-of-type legend {
+  color: #ddd;
+}
+
+.dashboard-wrapper .inputs fieldset input {
+  border: none;
+  margin-right: 8px;
+  max-width: 130px;
+  min-height: 35px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+.dashboard-wrapper .options {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-wrapper .options span {
+  color: #4184f3;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.dashboard-wrapper .buttons {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 10%;
+  padding: 0 20px;
+}
+
+.dashboard-wrapper .buttons span {
+  font-size: 0.8rem;
+}
+
+.dashboard-wrapper .order-window .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  margin-right: 2px;
+  margin-left: 2px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dashboard-wrapper .btn-grey {
+  background: #d4d4d4;
+  color: #666666;
+}
+
+.dashboard-wrapper .order-window .btn-blue {
+  background: #4184f3;
+}
+
+/* Pseudo selectors */
+.dashboard-wrapper .tab button::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: none;
+  margin-top: 10px;
+  background-color: #4184f3;
+}
+
+.dashboard-wrapper .inputs fieldset:focus {
+  outline: none;
+  border: 0.7px solid rgb(49, 49, 49);
+  border-radius: 2px;
+}
+
+.dashboard-wrapper .inputs fieldset input:focus {
+  outline: none;
+}
+
+.dashboard-wrapper .inputs fieldset input:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.dashboard-wrapper .order-window .btn-blue:hover {
+  background: #74a7fa;
+}
+
+.dashboard-wrapper .btn-grey:hover {
+  background: #9b9b9b;
+  color: #fff;
+}
