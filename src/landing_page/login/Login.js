@@ -13,7 +13,7 @@ function Login() {
         try {
 
             await axios.post(
-                "https://tradelens-ewjp.onrender.com/login",
+                "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/login",
                 {
                     username,
                     password,

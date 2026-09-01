@@ -23,7 +23,7 @@ const WatchList = () => {
   const loadWatchlist = async () => {
     try {
       const res = await axios.get(
-        "https://tradelens-ewjp.onrender.com/watchlist",
+        "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/watchlist",
         {
           withCredentials: true,
         }
@@ -36,7 +36,7 @@ const WatchList = () => {
         list.map(async (stock) => {
           try {
             const market = await axios.get(
-              `https://tradelens-ewjp.onrender.com/market/${stock.name}`
+              `https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/market/${stock.name}`
             );
 
             return {
@@ -91,7 +91,7 @@ const WatchList = () => {
     try {
 
       await axios.post(
-        "https://tradelens-ewjp.onrender.com/watchlist",
+        "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/watchlist",
         {
           name: search.toUpperCase(),
         },
@@ -277,7 +277,7 @@ const WatchListActions = ({ uid, reloadWatchlist }) => {
 
       await axios.delete(
 
-        `https://tradelens-ewjp.onrender.com/watchlist/${uid}`,
+        `https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/watchlist/${uid}`,
 
         {
           withCredentials: true,

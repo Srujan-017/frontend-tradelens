@@ -11,7 +11,7 @@ const Holdings = () => {
 
   axios
     .get(
-      "https://tradelens-ewjp.onrender.com/allHoldings",
+      "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/allHoldings",
       {
         withCredentials: true,
       }

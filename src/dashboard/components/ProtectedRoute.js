@@ -10,7 +10,7 @@ const ProtectedRoute = ({ children }) => {
 
         axios
             .get(
-                "https://tradelens-ewjp.onrender.com/currentUser",
+                "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/currentUser",
                 {
                     withCredentials: true,
                 }
@@ -23,7 +23,7 @@ const ProtectedRoute = ({ children }) => {
 
                 } else {
 
-                    window.location.href = "https://tradelens-1.onrender.com/login";
+                    window.location.href = "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/login";
 
                 }
 
@@ -32,7 +32,7 @@ const ProtectedRoute = ({ children }) => {
             })
             .catch(() => {
 
-                window.location.href = "https://tradelens-1.onrender.com/login";
+                window.location.href = "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/login";
 
             });
 

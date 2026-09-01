@@ -12,7 +12,7 @@ function Signup() {
 
     try {
         await axios.post(
-            "https://tradelens-ewjp.onrender.com/signup",
+            "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/signup",
             {
                 username,
                 email,
