@@ -16,7 +16,7 @@ const Home = () => {
       try {
 
         const result = await axios.get(
-          "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/currentUser",
+          "http://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/currentUser",
           {
             withCredentials: true,
           }

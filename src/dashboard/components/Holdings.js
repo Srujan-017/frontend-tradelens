@@ -11,7 +11,7 @@ const Holdings = () => {
 
   axios
     .get(
-      "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/allHoldings",
+      "http://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/allHoldings",
       {
         withCredentials: true,
       }
@@ -117,3 +117,4 @@ const Holdings = () => {
 };
 
 export default Holdings;
+

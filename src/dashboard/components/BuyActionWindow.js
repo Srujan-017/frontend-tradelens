@@ -16,7 +16,7 @@ const BuyActionWindow = ({ uid }) => {
   try {
 
     await axios.post(
-      "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/newOrder",
+      "http://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/newOrder",
       {
         name: uid,
         qty: stockQuantity,
@@ -87,3 +87,4 @@ const BuyActionWindow = ({ uid }) => {
 };
 
 export default BuyActionWindow;
+

@@ -10,7 +10,7 @@ const Funds = () => {
   try {
 
     const res = await axios.get(
-      "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/funds",
+      "http://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/funds",
       {
         withCredentials: true,
       }

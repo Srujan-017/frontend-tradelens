@@ -13,7 +13,7 @@ const SellActionWindow = ({ uid }) => {
   const handleSellClick = async () => {
     try {
       await axios.post(
-        "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/sellOrder",
+        "http://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/sellOrder",
         {
           name: uid,
           qty: Number(stockQuantity),

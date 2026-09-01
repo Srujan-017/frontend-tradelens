@@ -8,7 +8,7 @@ const Orders = () => {
   useEffect(() => {
 
     axios.get(
-      "https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/orders",
+      "http://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/orders",
       {
         withCredentials: true,
       }

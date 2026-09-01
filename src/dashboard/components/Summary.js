@@ -8,7 +8,7 @@ const Summary = () => {
 
 useEffect(() => {
   axios
-    .get("https://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/currentUser", {
+    .get("http://ec2-3-107-104-5.ap-southeast-2.compute.amazonaws.com:3002/currentUser", {
       withCredentials: true,
     })
     .then((res) => {
@@ -80,3 +80,4 @@ useEffect(() => {
 };
 
 export default Summary;
+
